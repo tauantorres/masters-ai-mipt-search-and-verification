@@ -1,0 +1,133 @@
+### Slide 01
+
+**Title:**
+Machine Learning for Fluid Mechanics
+Steven L. Brunton, Bernd R. Noack & Petros Koumoutsakos [2]
+
+**Names:**
+Mudassar Ullah and Tauan Torres
+
+**Course:**
+Masters in AI – MIPT – Search & Verification
+
+---
+
+### Slide 02
+
+**Tauan Torres**
+During my bachelor’s degree I focused on continuum mechanics — specifically the filtration of fluids through porous elastic media. This topic requires a deep understanding of both fluid-mechanics principles and solid-mechanics behaviour. The combination of these two fields — and on top of that the complexity of porous media — makes it a very challenging topic, since the models are not straightforward and often involve strongly nonlinear behaviour that is difficult to solve. During my lab work we conducted many experiments and collected large datasets, but solving problems such as the change of porosity due to deformation of the medium, or nonlinear flow regimes, remains challenging for traditional methods and very complicated numerical simulations.
+
+After finishing my bachelor’s degree, I began working in machine learning and artificial intelligence, and I realised that many of the problems we faced in the lab could be addressed using these techniques. My passion for continuum mechanics and fluid mechanics never faded; because of that, I decided to pursue this Master’s in AI to learn as much as I can and perhaps combine both beautiful fields to solve complex problems.
+
+In my free time, I enjoy researching scientists working in fluid mechanics. Some time back I found articles, courses and even books that discuss the use of machine learning in fluid mechanics. One of these is *Data-Driven Fluid Mechanics: Combining First Principles and Machine Learning* by Steven L. Brunton. Since then, I have been following his work and research.
+
+**Mudassar Ullah**
+
+---
+
+### Slide 03
+
+**Objective of Analysis**
+In 2019 the authors Steven L. Brunton [1], Bernd R. Noack and Petros Koumoutsakos published an article titled *Machine Learning for Fluid Mechanics* in *Annual Review of Fluid Mechanics* [2]. In their own words (from the abstract):
+
+> “The field of fluid mechanics is rapidly advancing, driven by unprecedented volumes of data from experiments, field measurements, and large-scale simulations at multiple spatiotemporal scales. Machine learning (ML) offers a wealth of techniques to extract information from data that can be translated into knowledge about the underlying fluid mechanics. Moreover, ML algorithms can augment domain knowledge and automate tasks related to flow control and optimization. This article presents an overview of past history, current developments, and emerging opportunities of ML for fluid mechanics.” [2]
+
+It’s no surprise that today the search for machine-learning applications, AI techniques, and data-driven methods is a trend in almost every scientific field — and fluid mechanics is no exception. What’s interesting is that this article was published before the 2023 AI boom (e.g., generative AI), yet the authors already foresaw the potential of these techniques in fluid mechanics. From that moment to now, we can observe how far the field has advanced and embraced these new methods.
+
+---
+
+### Slide 04
+
+**Reviews and Receptions — Where the reviews came from, who wrote them**
+
+The article presents a broad review of how machine-learning interfaces with fluid mechanics, covering modelling, control and data-driven techniques, and highlighting both opportunities, challenges, strengths and limitations [2]. At the time of writing this analysis, the article has many citations (over 3 000) on Google Scholar, which is very high for an article published in 2019/2020. We found very few reviews that critically challenge the article; instead, most reviews praise it and consider it a landmark in the field of machine-learning for fluid mechanics, highlighting it as the go-to reference for a “new era” of research in which the combination of traditional methods with data-driven techniques becomes standard.
+That said, we present two articles that review and discuss this work — not necessarily to criticise it, but to bring out points mentioned in the article which could be further analysed:
+
+1. It is cited in a newer “critical assessment” article: *Machine learning in fluid dynamics: A critical assessment* by Kunihiko Taira et al. (2025) which explicitly references Brunton et al.’s paper [4].
+2. It is also referenced in other review articles of the field (for example on physics-informed ML) which treat it as a foundational/seminal piece [3].
+
+---
+**Critical Reviews**
+
+### Slide 05
+
+* The article by Brunton, Noack & Koumoutsakos (2020) acknowledges its own limitations: for example “ML algorithms often come without guarantees for performance, robustness, or convergence” and “Incorporating and enforcing known flow physics is a challenge and opportunity for ML algorithms” [2].
+* A subsequent review/perspective: *Machine learning in fluid dynamics: A critical assessment* (Taira, Rigas & Fukami, 2025) emphasises that although ML has out-performed traditional approaches in some cases, “many fluid mechanics problems remain beyond the reach of current machine-learning techniques.” [4]
+* The 2025 piece further highlights key challenges:
+
+  * Need for **community-maintained datasets** and **open-source code repositories** to accelerate progress [4].
+  * The gap between excitement and the reality of applying ML in complex fluid-flow problems (e.g., high Reynolds-number turbulence, multiphase flows) remains significant.
+* Critical point for analysis: Although Brunton et al. set out a forward-looking agenda, actual uptake and mature validation of many of their “emerging opportunities” remain partial.
+
+### Slide 06
+
+* **Generalizability & interpretability**: ML methods in fluid mechanics are often “black-boxes”. While Brunton et al. address interpretability (“When do methods succeed or fail?”) [2], later assessments argue that interpretability remains a major barrier.
+* **Physics-integration challenges**: Brunton et al. call for hybrid models (data + first-principles) but leave many open-ended questions about how this will scale. The 2025 critique emphasises that the field is still in a “critical transitional state”. [4]
+* **Reproducibility, dataset-bias, industrial relevance**: The 2025 article points out that many ML applications in fluids rely on curated, idealised datasets rather than “real-world” complex flows, and that open sharing remains limited. [4]
+
+---
+**Positeve Reviews**
+
+### Slide 07
+
+* Brunton et al.’s article has become a **widely-cited reference** in ML + fluid mechanics: Google Scholar shows thousands of citations. [2]
+* It is praised for **bringing clarity** to a rapidly evolving field: its lucid breakdown of ML methods (SVM, Random Forest, Neural Networks etc.) and connection to fluid-mechanics tasks (reduced-order modelling, control) has been widely used.
+* The article is appreciated for **setting an agenda**: the section “Future Issues” (e.g., interpretability, hybridisation, open-science) has guided many subsequent research directions. [2]
+* From the 2023 survey *A Review of Physics-Informed Machine Learning in Fluid Mechanics* (Sharma et al., 2023): it references Brunton et al. as foundational in the PIML subfield, indicating the review’s influence. [3]
+
+### Slide 08
+
+* **Broad applicability:** The article covers modelling, control, optimisation — this breadth means it maps well onto many problems (including your porous-media + ML interest).
+* **Bridging communities:** The authors explicitly appeal to both fluid-mechanics researchers and ML/data scientists, helping foster interdisciplinary work — which fits your integration of continuum mechanics + AI.
+* **Visionary timing:** Published in 2020 (based on the 2019 advance version) just before the major generative-AI boom, the article was ahead of the curve; your Slide 03 already highlights this. [2]
+* **Framework for future work:** The “Strengths & Limitations” section, plus the “Future Issues”, mean the article is not just descriptive but normative — telling the field where to go. This makes it strong for your assignment because you can assess how those prescriptions have played out in 2023–25.
+* Suggested bullet for slide: “Its clarity and agenda-setting role make it an indispensable reference for anyone at the intersection of ML + fluid mechanics.”
+
+---
+**Our Critical Review**
+
+### Slide 09
+
+**Our Critical Review — Do we agree with the reviewers? Were they fair?**
+We agree with the reviewers that the article by Brunton et al. is a seminal and foundational work in the field of Machine Learning for Fluid Mechanics.
+Since its publication in 2019, it has been widely cited and referenced in numerous subsequent studies, reviews, and surveys. The article has played a crucial role in shaping the research landscape, highlighting key opportunities and challenges, and inspiring further investigations in this interdisciplinary area. Moreover, the authors’ emphasis on open science and collaboration is essential for the advancement of this field, and we believe that the fluid mechanics community will greatly benefit from embracing these principles.
+
+---
+**Comparative Context – Research Horizon ± 5–7 Years**
+
+### Slide 10
+
+* **Preceding works (≈ 2013–2018):** Although not always labelled “machine learning for fluid mechanics”, earlier reviews on data-driven modelling of chaotic flows and reduced-order modelling set the foundation for Brunton et al. Their 2020 article built on this base by bringing ML methods into fluid-mechanics tasks in an agenda-setting way.
+* **Peer / contemporary reviews (≈ 2019–2021):** For example, the *Special Issue on Machine Learning and Data-Driven Methods in Fluid Dynamics* (Brunton et al., 2020) provided a collection of articles exploring supervised ML for fluid flows. [7]
+* **Later works (≈ 2023–2025):**
+
+  * *Machine Learning in Fluid Dynamics: A Critical Assessment* (Taira, Rigas & Fukami, 2025) offers a maturity check: many of Brunton et al.’s “future issues” remain active challenges. [4]
+  * *The New Paradigm of Computational Fluid Dynamics – Empowering Computational Fluid Dynamics with Machine Learning* (Hu et al., 2025) underscores that ML + CFD is now seen as a new paradigm rather than just an emerging trend. [5]
+  * *Machine Learning in Fluid Dynamics — Physics-Informed Neural Networks (PINNs) Using Sparse Data: A Review* (El Hassani et al., 2025) takes the discussion further into PINNs and sparse-data regimes, reflecting one of the limitations Brunton et al. originally flagged. [8]
+
+---
+**Conclusions — What this tells us about the topic and its relevance**
+
+### Slide 11
+
+All topics under the AI scope are growing fast; therefore, the fields of machine learning and deep learning are no exception. It is very exciting to see that the field of fluid mechanics is embracing these new techniques and applying them to solve complex problems that were previously unsolvable using traditional methods.
+The article by Brunton et al. is a landmark in this field and will continue to be referenced for years to come as the starting point of a new era in fluid-mechanics research, where data-driven techniques and AI methods will be standard tools in the researcher’s toolbox. [2]
+
+---
+
+### Slide 12
+
+**References**
+
+[1] Steven L. Brunton Google Scholar Profile: [https://scholar.google.com/citations?hl=en&user=TjzWdigAAAAJ&view_op=list_works&sortby=pubdate](https://scholar.google.com/citations?hl=en&user=TjzWdigAAAAJ&view_op=list_works&sortby=pubdate)
+[2] *Machine Learning for Fluid Mechanics*, Steven L. Brunton, Bernd R. Noack, and Petros Koumoutsakos: [https://arxiv.org/pdf/1905.11075](https://arxiv.org/pdf/1905.11075)
+[3] *A Review of Fluid Mechanics Machine Learning for Fluid Mechanics*, Sharma et al.: [https://www.mdpi.com/1996-1073/16/5/2343](https://www.mdpi.com/1996-1073/16/5/2343)
+[4] *Machine Learning in Fluid Dynamics: A Critical Assessment*, Kunihiko Taira et al.: [https://journals.aps.org/prfluids/abstract/10.1103/8t52-mtb9](https://journals.aps.org/prfluids/abstract/10.1103/8t52-mtb9)
+[5] *The New Paradigm of Computational Fluid Dynamics: Empowering Computational Fluid Dynamics with Machine Learning*, Sien Hu et al.: [https://pubs.aip.org/aip/pof/article-abstract/37/8/081302/3357757/The-new-paradigm-of-computational-fluid-dynamics](https://pubs.aip.org/aip/pof/article-abstract/37/8/081302/3357757/The-new-paradigm-of-computational-fluid-dynamics)
+[6] *Machine Learning Reshaping Computational Fluid Dynamics: A Paradigm Shift in Accuracy and Speed*, Aly Mousaad Aly: [https://www.mdpi.com/2311-5521/10/10/275](https://www.mdpi.com/2311-5521/10/10/275)
+[7] *Special Issue on Machine Learning and Data-Driven Methods in Fluid Dynamics*, Steven L. Brunton, Maziar S. Hemati and Kunihiko Taira: [https://link.springer.com/article/10.1007/s00162-020-00542-y](https://link.springer.com/article/10.1007/s00162-020-00542-y)
+[8] *Machine Learning in Fluid Dynamics — Physics-Informed Neural Networks (PINNs) Using Sparse Data: A Review*, Mouhammad El Hassani et al.: [https://www.mdpi.com/2311-5521/10/9/226](https://www.mdpi.com/2311-5521/10/9/226)
+
+---
+
+
